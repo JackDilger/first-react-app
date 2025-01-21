@@ -1,0 +1,77 @@
+body {
+  background-color: #e6f3ff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.card-container {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 100px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  position: relative;
+  background-color: rgba(80, 103, 124, 0.9);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header span {
+  display: inline-block;
+  background-color: #f7f7f7;
+  color: rgba(80, 103, 124, 1);
+  font-weight: bold;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  position: relative; /* Required for positioning the ::after pseudo-element */
+}
+
+header span::after {
+  content: attr(initials); /* Dynamically displays the initials from the "initials" attribute */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(80, 103, 124, 1);
+}
+
+header h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+li span {
+  color: rgba(80, 103, 124, 0.9);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
